@@ -1,64 +1,46 @@
-# 🧠 Hackathon II – Phase I  
-## **Evolution of Todo: Spec-Driven CLI Application**
+# Todo CLI Application
 
-This project is the **first step** in the Evolution of Todo journey, where software is built using **Spec-Driven Development** instead of manual coding.
+A simple command-line Todo application that allows users to manage daily tasks with add, view, update, delete, and mark complete/incomplete functionality.
 
-In this phase, we created a **Python-based command-line Todo application** generated through **Claude Code** using structured specifications 📜🤖
+## Features
 
----
+- Add new tasks with title and optional description
+- View all tasks with their ID, title, and completion status
+- Update existing task title and/or description
+- Delete tasks by ID
+- Mark tasks as complete or incomplete
 
-## 🎯 Phase I
+## Requirements
 
-Build a fully functional **in-memory Todo CLI app** using:
+- Python 3.13 or higher
 
-- 🐍 Python  
-- 🤖 Claude Code  
-- 📘 Spec-Kit Plus  
+## Setup
 
-All features were implemented by writing **Specs and Constitutions**, then refining them until Claude Code generated the correct implementation.
-
-## ✨ Features
-
-This CLI app allows users to manage daily tasks with the following functionality:
-
-- ➕ **Add Task** – Create a new todo with title and optional description  
-- 📋 **View Tasks** – See all tasks with ID and completion status  
-- ✏️ **Update Task** – Modify title and/or description  
-- ❌ **Delete Task** – Remove a task by ID  
-- ✅ **Mark Complete / Incomplete** – Toggle task status  
-
-All data is stored **in memory** for this phase.
-
----
-
-## 🖥️ Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| Python 3.13+ | Core programming language |
-| Claude Code | AI code generation from specs |
-| Spec-Kit Plus | Spec-driven development framework |
-
----
-
-## 📂 Project Structure
-
-src/
-│
-├── models.py # Task data model
-├── services.py # Business logic for task operations
-├── cli.py # Command-line interface handling
-├── utils.py # Helper and utility functions
-└── main.py # Application entry point
-
----
-
-## ▶️ How to Run
-
-1️⃣ Make sure Python 3.13+ is installed  
-2️⃣ Navigate to the project directory  
-3️⃣ Run the application:
+1. Clone the repository
+2. Navigate to the project directory
+3. Run the application using Python:
 
 ```bash
 python src/main.py
+```
 
+## Usage
+
+The application provides a menu-driven interface:
+
+1. Add task - Add a new task with title and optional description
+2. View tasks - Display all tasks with their ID, title, and completion status
+3. Update task - Modify an existing task's title and/or description
+4. Delete task - Remove a task by ID
+5. Mark task complete/incomplete - Toggle task completion status
+6. Exit - Close the application
+
+## Architecture
+
+The application follows a modular architecture with clear separation of concerns:
+
+- `models.py`: Task data model
+- `services.py`: Business logic for task operations
+- `cli.py`: User interface and input handling
+- `main.py`: Application entry point
+- `utils.py`: Utility functions# Hackathon-2-Phase-1
